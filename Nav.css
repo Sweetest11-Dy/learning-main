@@ -9,13 +9,18 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 2.6;
-  background-color: #f4f4f4;
+  /* 
+    The line below is not a valid CSS color. 
+    If you intended a white background, use #fff or white. 
+    For a custom color, use a valid color code (e.g., #1E4F66) or an RGB/HSL format.
+  */
+  background-color: #fff; /* changed to a valid white color */
   color: #333;
 }
 
 /* Navigation Styles */
 header {
-  background-color: #333;
+  background-color: #000000;
 }
 
 nav ul {
@@ -88,4 +93,29 @@ footer {
   color: #fff;
   text-align: center;
   padding: 15px;
+}
+
+/* -------------------------------------
+   TEXT BOX STYLING
+   ------------------------------------- */
+.text-box {
+  background-color: #fff;                /* White background */
+  border: 1px solid #ddd;               /* Light gray border */
+  border-radius: 8px;                   /* Rounded corners */
+  padding: 2.5rem;                      /* Spacing inside the box */
+  max-width: 600px;                     /* Limits how wide the box can get */
+  margin: 2rem auto;                    /* Centers the box and adds vertical spacing */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);/* Subtle drop shadow */
+  color: #333;                          /* Text color */
+  line-height: 1.6;                     /* Improves readability */
+}
+
+.text-box h2,
+.text-box h1 {
+  margin-top: 0;       /* Remove default top margin */
+  margin-bottom: 1rem;
+}
+
+.text-box p {
+  margin-bottom: 1rem;
 }
